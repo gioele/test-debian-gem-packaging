@@ -15,5 +15,8 @@ Package: ruby-filepath
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
-Description: filepath is a small library that helps dealing with files, directories and paths in general; a modern replacement for the standard Pathname.
- filepath is built around two main classes: `FilePath`, that represents paths, and `FilePathList`, lists of paths. The instances of these classes are immutable objects with dozens of convience methods for common operations such as calculating relative paths, concatenating paths, finding all the files in a directory or modifing all the extensions of a list of file
+Description: Small library to manipulate paths; a modern replacement for the Pathname
+ The Filepath class provides immutable objects with dozens of convenience
+ methods for common operations such as calculating relative paths,
+ concatenating paths, finding all the files in a directory or modifying
+ all the extensions of a list of filenames at once.
