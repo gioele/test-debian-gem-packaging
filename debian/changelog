@@ -1,0 +1,5 @@
+ruby-filepath (0.6-1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #723905)
+
+ -- Gioele Barabucci <gioele@svario.it>  Sun, 15 Sep 2013 14:59:44 +0000
