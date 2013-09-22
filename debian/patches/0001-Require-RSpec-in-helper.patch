@@ -1,0 +1,21 @@
+From: Gioele Barabucci <gioele@svario.it>
+Date: Sun, 22 Sep 2013 11:40:19 +0000
+Subject: Require RSpec in helper
+
+---
+ spec/spec_helper.rb | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/spec/spec_helper.rb b/spec/spec_helper.rb
+index 059e2e4..ac50221 100644
+--- a/spec/spec_helper.rb
++++ b/spec/spec_helper.rb
+@@ -3,6 +3,8 @@
+ LIB_DIR = File.expand_path(File.join(File.dirname(__FILE__), %w[.. lib]))
+ $LOAD_PATH.unshift(LIB_DIR) unless $LOAD_PATH.include?(LIB_DIR)
+ 
++require 'rspec'
++
+ require 'filepath'
+ 
+ RSpec.configure do |config|
