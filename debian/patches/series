@@ -1,1 +1,2 @@
 0001-Require-RSpec-in-helper.patch
+0002-Avoid-requiring-bundler-in-Rakefile.patch

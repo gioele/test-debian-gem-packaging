@@ -1,0 +1,19 @@
+From: Gioele Barabucci <gioele@svario.it>
+Date: Sun, 22 Sep 2013 11:42:51 +0000
+Subject: Avoid requiring bundler in Rakefile
+
+---
+ Rakefile | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/Rakefile b/Rakefile
+index 9e1a46b..fbcf4d6 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -1,6 +1,5 @@
+ # This is free software released into the public domain (CC0 license).
+ 
+-require 'bundler/gem_tasks'
+ require 'rspec/core/rake_task'
+ 
+ require File.join(File.dirname(__FILE__), 'spec/tasks')
