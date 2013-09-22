@@ -1,0 +1,24 @@
+From: Gioele Barabucci <gioele@svario.it>
+Date: Sun, 22 Sep 2013 12:31:39 +0000
+Subject: Avoid readability test
+
+The readability test is used to check whether chmod calls are working
+properly. However git-buildpackage runs tests as root, so the
+test will fail.
+---
+ spec/filepath_spec.rb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/spec/filepath_spec.rb b/spec/filepath_spec.rb
+index a35e300..9aec448 100644
+--- a/spec/filepath_spec.rb
++++ b/spec/filepath_spec.rb
+@@ -565,7 +565,7 @@ describe FilePath do
+ 		end
+ 
+ 		describe "#chmod" do
+-			it "changes file permissions" do
++			it "changes file permissions", :broken => true do
+ 				ph = @root / 'f1'
+ 				orig_mode = ph.stat.mode
+ 
